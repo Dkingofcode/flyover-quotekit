@@ -4,6 +4,18 @@
 
 Makes BTC → RBTC (and pegout) onboarding predictable by handling timeouts, validation, expiry, and safe multi-LP fallback.
 
+## 🌍 Why Quotekit?
+
+Flyover integrations often fail in subtle ways:
+
+- Hanging requests  
+- Stale or expired quotes  
+- Inconsistent LP responses  
+- Fragile retry logic  
+
+Quotekit eliminates these risks with a **deterministic, typed reliability layer**, so developers can focus on building—not firefighting edge cases.
+
+
 ## Features
 
 - Strict per-request timeouts (never hangs)
