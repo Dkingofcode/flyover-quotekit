@@ -39,3 +39,6 @@ npm run mock:lps
 
 # Terminal 2 — Run Demo
 npm run demo
+
+# Running Tests
+npm test
