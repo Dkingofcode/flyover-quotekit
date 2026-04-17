@@ -1,0 +1,36 @@
+{
+  "name": "@rsksmart/quotekit",
+  "version": "0.1.0",
+  "description": "Flyover Integrator Reliability Kit - timeouts, validation, typed errors, deterministic multi-LP fallback",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node --transpile-only tests/run-tests.ts",
+    "test:quick": "ts-node --transpile-only tests/quote-client.test.ts",
+    "mock:lps": "ts-node src/mock/mock-lps.ts",
+    "demo": "ts-node --transpile-only examples/demo.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "p-limit": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.19.17",
+    "@types/supertest": "^6.0.3",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsksmart/quotekit"
+  }
+}
