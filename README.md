@@ -20,3 +20,22 @@ Makes BTC → RBTC (and pegout) onboarding predictable by handling timeouts, val
 
 ```bash
 npm install @rsksmart/quotekit
+
+
+ 
+
+
+
+## Quick Demo (Test in < 45 seconds)
+```bash
+git clone https://github.com/YOUR-USERNAME/quotekit.git
+cd quotekit
+npm install
+
+
+```bash
+# Terminal 1 — Start Mock LPS
+npm run mock:lps
+
+# Terminal 2 — Run Demo
+npm run demo
